@@ -14,7 +14,12 @@
   font-style: normal;
 }
 /* common styles */
+.bg-color-all {
+  background-color: #f5f9ff;
+}
+/*  */
 
+/*  */
 main {
   max-width: 1240px; /* or whatever the total width of your content is */
   margin: 0 auto;
@@ -92,16 +97,32 @@ header {
   font-size: 16px;
   font-weight: bold;
   margin-top: 37px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.stayfocused:hover {
+  background-color: antiquewhite;
+  color: black;
+  border: 1px solid black;
 }
 
 /* action part style */
 
 .action {
   display: flex;
-  margin-top: 116px;
-  /* justify-content: space-between; */
+  /* margin-top: 116px; */
+  justify-content: space-between;
 
-  gap: 203px;
+  /* gap: 203px; */
+  /* justify-content: center; */
+}
+
+.text-part {
+  margin-top: 116px;
+}
+.image-part {
+  margin-top: 116px;
 }
 .action-text {
   font-family: "Raleway", sans-serif;
@@ -151,7 +172,7 @@ header {
   /* max-width: 900px; */
   margin-top: 116px;
   /* width: 100%; */
-  width: 800px;
+  /* width: 800px; */
   padding: 50px 142px 50px 142px;
 }
 .statistics li {
@@ -244,5 +265,60 @@ header {
 
 .user-reviews {
   display: flex;
-  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.get-in-touch {
+  padding: 0px;
+  display: flex;
+  gap: 115px;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
+  margin-top: 93px;
+}
+
+.touch-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 97px;
+  width: 528px;
+}
+
+.form-fields {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 800px;
+  margin-bottom: 15px;
+}
+
+section input[type="text"],
+section input[type="email"],
+section textarea {
+  height: 70px;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  display: block;
+  width: 497px;
+  padding: 20px 20px 10px 32px;
+  margin-bottom: 24px;
+  border: none;
+}
+
+.gettinginbutton {
+  text-align: center;
+  width: 550px;
+  padding: 19px 201px 19px 201px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.gettinginbutton:hover {
+  background-color: antiquewhite;
+  color: black;
+  border: 1px solid black;
 }
