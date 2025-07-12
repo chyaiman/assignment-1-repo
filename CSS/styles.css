@@ -196,8 +196,9 @@ header {
   /* padding: 68px 24px 94px 24px; */
   padding: 30px;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.6);
-  height: 243px;
-  width: 367px;
+  height: 200px;
+  width: 330px;
+  border-radius: 14px;
 }
 .user-image-name {
   display: flex;
@@ -231,4 +232,17 @@ header {
 
 .reviewer-name {
   color: rgba(117, 117, 117, 1);
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+}
+
+.reviewer-date {
+  color: rgba(179, 179, 179, 1);
+  font-weight: lighter;
+  font-family: "Raleway", sans-serif;
+}
+
+.user-reviews {
+  display: flex;
+  justify-content: space-around;
 }
